@@ -160,3 +160,190 @@ The application uses realistic enterprise dependencies:
 - **ENSURE** proper network segmentation when testing
 
 This application is intended solely for security research, tool testing, and educational purposes.
+
+
+
+# Vulnerabilities Overview
+
+## /src/lib.rs
+**Example 1** - CWE-89: SQL Injection (Supported)
+
+Expected to be detected.
+- **Source:** Line 279 at /src/main.rs
+- **Sink:** Line 154
+
+**Example 2** - CWE-89: SQL Injection (Supported)
+
+Expected to be detected.
+- **Source:** Line 340 at /src/main.rs
+- **Sink:** Line 154
+
+**Example 3** - CWE-89: SQL Injection (Supported)
+
+Expected to be detected.
+- **Source:** Line 279 at /src/main.rs
+- **Sink:** Line 174
+
+**Example 4** - CWE-89: SQL Injection (Supported)
+
+Expected to be detected.
+- **Source:** Line 373 at /src/main.rs
+- **Sink:** Line 174
+
+**Example 5** - CWE-89: SQL Injection (Supported)
+
+Expected to be detected.
+- **Source:** Line 386 at /src/main.rs
+- **Sink:** Line 191
+
+**Example 6** - CWE-89: SQL Injection (Supported)
+
+Expected to be detected.
+- **Source:** Line 400 at /src/main.rs
+- **Sink:** Line 211
+
+**Example 7** - CWE-89: SQL Injection (Supported)
+
+Expected to be detected.
+- **Source:** Line 340 at /src/main.rs
+- **Sink:** Line 243
+
+**Example 8** - CWE-89: SQL Injection (Supported)
+
+Expected to be detected.
+- **Source:** Line 537 at /src/main.rs
+- **Sink:** Line 258
+
+**Example 9** - CWE-78: Command Injection (Supported)
+
+Expected to be detected.
+- **Source:** Line 301 at /src/main.rs
+- **Sink:** Line 322
+
+**Example 10** - CWE-78: Command Injection (Supported)
+
+Expected to be detected.
+- **Source:** Line 469 at /src/main.rs
+- **Sink:** Line 322
+
+**Example 11** - CWE-22: Path Traversal (Supported)
+
+Expected to be detected.
+- **Source:** Line 400 at /src/main.rs
+- **Sink:** Line 217
+
+**Example 12** - CWE-22: Path Traversal (Supported)
+
+Expected to be detected.
+- **Source:** Line 523 at /src/main.rs
+- **Sink:** Line 391
+
+**Example 13** - CWE-639: Authorization Bypass Through User-Controlled Key (Not supported)
+
+- **Source:** Line 386 at /src/main.rs
+- **Sink:** Line 200
+
+**Example 14** - CWE-502: Deserialization of Untrusted Data (Not supported)
+
+- **Source:** Line 460 at /src/main.rs
+- **Sink:** Line 315
+
+**Example 15** - CWE-502: Deserialization of Untrusted Data (Not supported)
+
+- **Source:** Line 449 at /src/main.rs
+- **Sink:** Line 375
+
+**Example 16** - CWE-611: Improper Restriction of XML External Entity Reference (Not supported)
+
+- **Source:** Line 438 at /src/main.rs
+- **Sink:** Line 355
+
+**Example 17** - CWE-532: Insertion of Sensitive Information into Log File (Not supported)
+
+- **Source:** Line 279 at /src/main.rs
+- **Sink:** Line 150
+
+**Example 18** - CWE-532: Insertion of Sensitive Information into Log File (Not supported)
+
+- **Source:** Line 279 at /src/main.rs
+- **Sink:** Line 151
+
+**Example 19** - CWE-532: Insertion of Sensitive Information into Log File (Not supported)
+
+- **Source:** Line 340 at /src/main.rs
+- **Sink:** Line 150
+
+**Example 20** - CWE-532: Insertion of Sensitive Information into Log File (Not supported)
+
+- **Source:** Line 340 at /src/main.rs
+- **Sink:** Line 151
+
+**Example 21** - CWE-532: Insertion of Sensitive Information into Log File (Not supported)
+
+- **Source:** Line 340 at /src/main.rs
+- **Sink:** Line 241
+
+**Example 22** - CWE-256: Plaintext Storage of a Password (Not supported)
+
+- **Source:** Line 20
+- **Sink:** Line 73
+
+**Example 23** - CWE-256: Plaintext Storage of a Password (Not supported)
+
+- **Source:** Line 20
+- **Sink:** Line 111
+
+**Example 24** - CWE-256: Plaintext Storage of a Password (Not supported)
+
+- **Source:** Line 20
+- **Sink:** Line 117
+
+**Example 25** - CWE-256: Plaintext Storage of a Password (Not supported)
+
+- **Source:** Line 20
+- **Sink:** Line 275
+
+**Example 26** - CWE-287: Improper Authentication (Not supported)
+
+- **Source:** Line 340 at /src/main.rs
+- **Sink:** Line 344
+
+**Example 27** - CWE-209: Generation of Error Message Containing Sensitive Information (Not supported)
+
+- **Source:** Line 158
+- **Sink:** Line 159
+
+**Example 28** - CWE-209: Generation of Error Message Containing Sensitive Information (Not supported)
+
+- **Source:** Line 219
+- **Sink:** Line 220
+
+**Example 29** - CWE-22: Path Traversal (Supported)
+
+Expected to be detected.
+- **Source:** Line 322 at /src/main.rs
+- **Sink:** Line 334
+
+## /src/main.rs
+**Example 1** - CWE-22: Path Traversal (Supported)
+
+Expected to be detected.
+- **Source:** Line 494 
+- **Sink:** Line 502
+
+**Example 2** - CWE-918: Server-Side Request Forgery (Supported)
+
+Expected to be detected.
+- **Source:** Line 413
+- **Sink:** Line 415
+
+**Example 3** - CWE-90: LDAP Injection (Supported)
+
+Not expected to be detected.
+- **Source:** Line 481
+- **Sink:** Not present
+
+**Example 4** - CWE-548: Information Exposure Through Directory Listing (Not supported)
+
+- **Source:** Line 582
+- **Sink:** Line 582
