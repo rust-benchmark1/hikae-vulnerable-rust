@@ -228,7 +228,7 @@ Expected to be detected.
 
 **Example 11** - CWE-22: Path Traversal (Supported)
 
-Expected to be detected.
+The source is low probability.
 - **Source:** Line 400 at /src/main.rs
 - **Sink:** Line 217
 
